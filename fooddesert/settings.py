@@ -37,7 +37,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'oasis',
-    'bootstrap_toolkit',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,7 +60,7 @@ WSGI_APPLICATION = 'fooddesert.wsgi.application'
 DATABASES = {
 "default": {
    "ENGINE": "django.db.backends.postgresql_psycopg2",
-}
+            }
 }
 
 # Internationalization
