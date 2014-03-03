@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Volumes/250GB HDD/Users/Shared/Code/fooddesert/myenv"
+set -gx VIRTUAL_ENV "/Volumes/250GB_HDD/Users/Shared/Code/fooddesert/myenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
