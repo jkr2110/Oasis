@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'oasis',
     'bootstrap_toolkit',
-    'gunicorn',
 )
 
 MIDDLEWARE_CLASSES = (
