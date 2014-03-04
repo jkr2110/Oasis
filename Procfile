@@ -1,1 +1,1 @@
-web: gunicorn fooddesert.wsgi
+web: python manage.py runserver
