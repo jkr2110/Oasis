@@ -1,1 +1,1 @@
-web: cd app/fooddesert; gunicorn fooddesert.wsgi:application
+web: cd ./fooddesert; gunicorn fooddesert.wsgi:application
