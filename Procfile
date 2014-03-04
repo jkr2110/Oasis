@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:8000 --pythonpath=./myenv fooddesert.wsgi:application
+web: python manage.py run_gunicorn -b "0.0.0.0:$PORT" -w 3
