@@ -1,1 +1,1 @@
-web: gunicorn fooddesert.wsgi
+web: cd fooddesert; gunicorn fooddesert.wsgi --settings=fooddesert.settings.production
