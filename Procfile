@@ -1,1 +1,1 @@
-web: cd ./fooddesert; gunicorn fooddesert.wsgi:application
+web: gunicorn -b 0.0.0.0:8000 --pythonpath=./fooddesert fooddesert.wsgi:application
