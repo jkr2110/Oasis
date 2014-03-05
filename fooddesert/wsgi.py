@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path = sys.path + ["/app/"] # The first one 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fooddesert.settings")
 
 
