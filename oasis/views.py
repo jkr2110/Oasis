@@ -8,6 +8,9 @@ def index(request):
 def about(request):
 	return render_to_response('oasis/about.html')
 
+def methodology(request):
+	return render_to_response('oasis/methodology.html')
+
 def contact(request):
 	return render_to_response('oasis/contact.html')
 
