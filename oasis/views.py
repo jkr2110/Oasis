@@ -28,3 +28,6 @@ def business(request):
 
 def citizen(request):
 	return render_to_response('oasis/citizen.html')
+
+def indicator(request):
+	return render_to_response('oasis/indicator.html')
