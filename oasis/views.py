@@ -25,3 +25,6 @@ def restaurant(request):
 
 def business(request):
 	return render_to_response('oasis/business.html')
+
+def citizen(request):
+	return render_to_response('oasis/citizen.html')

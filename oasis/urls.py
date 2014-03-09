@@ -14,4 +14,5 @@ urlpatterns = patterns('',
     url(r'^methodology/$', views.methodology, name='methodology'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^business/$', views.business, name='business'),
+    url(r'^citizen/$', views.citizen, name='citizen'),
 )
