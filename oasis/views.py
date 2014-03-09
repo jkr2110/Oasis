@@ -22,3 +22,6 @@ def grocery(request):
 
 def restaurant(request):
 	return render_to_response('oasis/restaurant.html')
+
+def business(request):
+	return render_to_response('oasis/business.html')

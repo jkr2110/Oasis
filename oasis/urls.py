@@ -13,4 +13,5 @@ urlpatterns = patterns('',
     url(r'^about/$', views.about, name='about'),
     url(r'^methodology/$', views.methodology, name='methodology'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^business/$', views.business, name='business'),
 )
