@@ -79,8 +79,34 @@
             <h2 class="blog-post-title">Methodology</h2>
             <p class="blog-post-meta">March 1, 2014 by <a href="#">Oasis Team</a></p>
 
-            <p>We studied the ratio of healthy and unhealthy options in a given area and came up with a new performance metric that quantified the availability of healthy and unhealthy foods throughout the city.  </p>
-            <p>We focused on data that contained relevant information on businesses in New York City so we could distinguish between restaurants/fast food, grocery stores, supermarkets, and farmer’s markets. 
+            <p>
+              In order to calculate the Fresh Food Availability Index (FFA), we counted up the number of farmers markets, healthy bodegas and grocery stores in the given polygon against the population, to compute the healthy score for an area.  We did the same for the unhealthy score, by counting up the number of unhealthy groceries and bodegas in the polygons.  We gave two separate scores for healthy and unhealthy, so that you could clearly see where a certain area lies on the spectrum both for healthy and unhealthy food, as opposed to calculating a ratio of the two.
+            </p>
+          <hr>
+
+        <div class="container">
+
+      <div class="blog-header">
+        <h2 class="blog-title"></h2>
+        <p class="lead blog-description"></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Data Cleaning</h2>
+            <p class="blog-post-meta">March 2, 2014 by <a href="#">Oasis Team</a></p>
+            <p>We used python to sort and clean over 15,000 records of food establishments in NYC. We then assigned the following scores to establishments with the associated keywords or franchise names:</p>
+            <ul>
+              <li>1: Whole Foods, Trader Joe’s, Fairway, Stop and Shop, Shop Rite, Union Market, Key Food, Costco, Pathmark, Target, Pioneer, Associated Market, Food Bazaar, C-Town, Bravo Supermarket, Fine Fare Supermarket, Met Foods, NSA Supermarket, Compare Foods, Foodtown, Shop Smart, Superior Markets
+              <li>2: Fruit, Vegetable, and Produce</li>
+              <li>3-9: Stores with keywords such as “Grocery”, “Deli”, and “Market”</li>
+            </ul>
+            <p>
+            The bodega data, was taken from the website ilikenicethings.com/bodegas/ which tries to document every bodega in the city, using citizen science.  Right now they mainly have information for bodegas in Brooklyn and Manhattan, and therefore we used this as a supplement to our grocery store data.  They had the information in a kml format, which was not exportable.  We saved it as a xml and then converted it to a kml, and it worked well in CartoDB.  Like the grocery store data, we categorized anything with “fruit”, “vegetable”, or “produce” in the name as a healthy bodega, and everything else as an unhealthy bodega, to give an appropriate index score to each location.
+
             </p>
           <hr>
             
@@ -97,20 +123,16 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Data Sources</h2>
-            <p class="blog-post-meta">March 2, 2014 by <a href="#">Oasis Team</a></p>
+            <p class="blog-post-meta">March 24, 2014 by <a href="#">Oasis Team</a></p>
 
             <p>
-            The data sources we used are as follows: 
+            The following datasets and sources contributed to our analysis:
           <ul>
-          <li>NYC Open Data</li>
-          <li>Pediacities</li>
-          <li>NYC Business Census</li>
-          <li>Census Tract Data</li>
-          <li>Map Pluto</li>
+          <li>NYC Open Data: Farmer’s Markets, FRESH boundaries</li>
+          <li>Pediacities: NYC Restaurants by Grade, Grocery Stores, Population by Community District</li>
+          <li>I Like Nice Things: Bodegas</li>
         </ul>
 </p>
-            <p>Legal and privacy concerns were not an issue because we obtained the information from public open sources. We also checked each data source for license restrictions.
-            </p>
             <hr>
 
 
